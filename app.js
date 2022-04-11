@@ -12,7 +12,7 @@ const buttons = document.querySelectorAll('.listbutton')
 // addEventListener
 grandparent.addEventListener('click', e => console.log('you clicked grandparent'))
 parent.addEventListener('click', handleParent)
-child.addEventListener('mouseover', () => child.textContent = 'HEYYYYYY')
+child.addEventListener('mouseover', e => {child.style.backgroundColor = 'orange'})
 button.addEventListener('click', e => handleButtonClick(e))
 input.addEventListener('keyup', e => {console.log(e.target.value)})
 document.addEventListener('click', e => console.log("document"))
